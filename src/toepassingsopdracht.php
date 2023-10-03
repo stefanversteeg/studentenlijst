@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a href="csv.php">csv</a><br>
+    <a href="pdf.php">pdf</a>
 <div class="container">
 <!-- Zoekbalk voor studentenlijst -->
     <input type="text" id="zoekbalk" placeholder="Zoeken...">
@@ -41,7 +43,7 @@
             // Weergeven van de studentinformatie in een kaart op de webpagina
             echo "<div class='kaart'>" . $row["StudentNaam"] . "<div class='details'>
                 <p class='telefoonnummer'>Telefoonnummer: " . $row["StudentNummer"] . "</p>
-                <p class='email'>Email: " . $row["Studentmail"] . "</p>
+                <p class='email'>Email: <a href='mailto:" . $row["Studentmail"] . "'>" . $row["Studentmail"] . "</a></p>
             </div></div>";
         }
     } else {

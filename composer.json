@@ -1,0 +1,8 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "league/csv": "9.0",
+        "mpdf/mpdf": "^6.1",
+        "dompdf/dompdf": "^2.0"
+    }
+}
